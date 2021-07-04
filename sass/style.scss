@@ -4,6 +4,7 @@ $transition: all 1s;
 
 $color-main: #17daa3;
 $color-light: #fff;
+$color-gray: #dfe6e9;
 
 $font-main: 'Raleway', sans-serif;
 
@@ -138,7 +139,7 @@ button {
 
 /* About us */
 
-.btn-2 {
+.btn-2, {
 	position: absolute;
 	text-align: center;
 	top: 130%;
@@ -157,7 +158,7 @@ button {
 	width: 150px;
 	border: 3px solid $color-light;
 	border-radius: 50%;
-	background-color: #dfe6e9;
+	background-color: $color-gray;
 	i {
 		position: absolute;
 		top: 50%;
@@ -168,6 +169,60 @@ button {
 	}
 }
 
+/* Text-right */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text-right {
+	background-color: $color-gray;
+	margin-top: 180px;
+}
+
+.right-body {
+	width: 50%;
+	font-family: $font-main;
+	float: right;
+	h2 {
+		margin: 0;
+		text-align: left;
+		font-size: 60px;
+		font-weight: 100;
+	}
+	p {
+		text-align: left;
+	}
+	button {
+		background-color: $color-main;
+		border: none;
+		margin-top: 50px;
+	}
+}
+
+/* Text-left */
+
+.left-body {
+	width: 50%;
+	font-family: $font-main;
+	float: left;
+	h2 {
+		margin: 0;
+		text-align: left;
+		font-size: 60px;
+		font-weight: 100;
+	}
+	p {
+		text-align: left;
+	}
+	button {
+		background-color: $color-main;
+		border: none;
+		margin-top: 50px;
+	}
+}
 
 
 
