@@ -139,7 +139,7 @@ button {
 
 /* About us */
 
-.btn-2, {
+.btn-2 {
 	position: absolute;
 	text-align: center;
 	top: 130%;
@@ -223,6 +223,40 @@ button {
 		margin-top: 50px;
 	}
 }
+
+/* Opinions */
+
+.opinions {
+	background-image: url('/images/Class.png');
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+	text-align: center;
+	.container {
+		position: relative;
+		img, h3, p {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		img {
+		top: 190px;
+		}
+		h3 {
+		top: 330px;
+		color: $color-light;
+			span {
+				color: $color-main;
+			}
+		}
+		p {
+		top: 400px;
+		color: $color-gray;
+		}
+	}
+}
+
+
 
 
 
